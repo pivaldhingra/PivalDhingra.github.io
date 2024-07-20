@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pival Dhingra</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#intro {
+				background-color: black; /* Light gray background */
+				color: black; /* Dark text for contrast */
+            }
+			#snakeCanvas {
+				position: absolute;
+				top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%; /* Ensure it is behind the content */
+            }
+			.hello-text {
+				font-size: 3em;
+				color: white;
+                text-align: center;
+                animation: fade 3s infinite;
+            }
+			ul.actions{
+				display: flex;
+				justify-content: center;
+				padding: 0;
+			}
+			#one {
+				background-color: white;
+			}
+			#two {
+				background-color: white;
+
+			}
+			.projects-container {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			.project {
+				background: white;
+				padding: 20px;
+				margin: 10px;
+				width: 30%;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				border-radius: 8px;
+				text-align: center;
+				border: 2px solid black;
+			}
+			.project h3 {
+				margin-top: 0;
+				color: black;
+
+			}			
+			.project img {
+				width: 100%;
+				height: auto;
+				border-radius: 8px;
+			}
+			.project p {
+				color: black;
+			}
+			#three {
+				background-color: white;
+			}
+			.icons-center {
+				list-style: none;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
+			.icons-center li {
+				margin: 0 65px;
+			}
+			.icons-center .icon {
+				color: lightseagreen;
+				font-size: xx-large;
+			}
+			.styled-hr {
+				border: none;
+				border-bottom: 2px solid lightseagreen;
+				width: 10%;
+				margin: 0 auto 20px;
+
+			}
+        </style>	
+	</head>
+	<body class="is-preload">
+		<div id="particle-container"></div>
+		
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				
+
+				<!-- Intro -->
+				
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<canvas id="snakeCanvas"></canvas>
+						<div class="inner">
+							<h1 style="text-align: center;" class="hello-text"> <span id="helloText">Hello!</span> I'm Pival</h1>					
+							<ul class="actions">
+									<li><a href="#two" class="button scrolly">My Projects</a></li>
+							</ul>
+						</div>
+					</section>
+				
+					
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a class="image"><img src="images/photo11.HEIC" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2 style="color: black; text-align: center;">About me</h2>
+									<hr class="styled-hr">
+									<p style="color: black;">I am a recent graduate with Bachelor’s degree in Statistics and minor in Computing from the University of Waterloo. 
+										I possess a strong foundation in statistical analysis and data visualization, complemented by hands-on experience 
+										in utilizing programming languages like Python and R for data-driven insights. With a keen interest in predictive modeling, 
+										I have explored diverse projects, from forecasting Bitcoin trends using time series analysis to investigating
+										the impact of metal exposure on children’s IQ.</p>
+									<p style="color: black;">Throughout my academic journey, I have developed my skills in regression modeling, data visualization,
+										 and risk analysis, applying these competencies to real-world scenarios such as analyzing legal service patterns and 
+										 optimizing housing administration data. Beyond technical expertise, my experience as a volunteer conversation partner 
+										 underscores my commitment to fostering intercultural understanding and enhancing communication skills.</p>
+									<p style="color: black;"> I am enthusiastic about leveraging my analytical prowess and collaborative spirit to tackle
+										 complex challenges and drive impactful outcomes in data-driven environments. </p>
+								</div>
+							</div>
+						</section>
+					</section>
+				
+					<!-- Two -->
+						<section id="two" class="wrapper style3 fade-up">
+							<div class="inner">
+								<h2 style="color: black; text-align: center;">My Projects</h2>
+								<p style="color: black; text-align: center;">An overview of my projects</p>
+								<hr class="styled-hr">
+								<div class="projects-container">
+									<div class="project">
+										<a href="https://github.com/pivaldhingra/Bitcoin_Prediction" class="image"><img src="images/photo12.jpg" alt="Project 1"></a>
+										<a href="https://github.com/pivaldhingra/Bitcoin_Prediction" class="h3"><h3>Bitcoin Price Prediction</h3></a>
+										<p>Developed a predictive model using statistical techniques to estimate future Bitcoin prices based on historical trends.</p>
+									</div>
+									<div class="project">
+										<a href="https://github.com/pivaldhingra/Pro_Bono_Analysis" class="image"><img src="images/photo20.jpg" alt="Project 2"></a>
+										<a href="https://github.com/pivaldhingra/Pro_Bono_Analysis" class="h3"><h3>Data-Driven Pro Bono Analysis</h3></a>
+										<p>Investigated the effectiveness of the ABA's pro bono legal services platform by analyzing client density, wait times, service demand, and attorney-client ratios across states.</p>
+									</div>
+									<div class="project">
+										<a href="https://github.com/pivaldhingra/Children_IQ_Analysis" class="image"><img src="images/photo19.jpg" alt="Project 3"></a>
+										<a href="https://github.com/pivaldhingra/Children_IQ_Analysis" class="h3"><h3>Impact of Metal Exposure on Children's Cognitive Development</h3></a>
+										<p>Investigated the relationship between metal exposure experienced by the child and the mother and its effect on the child’s IQ between the ages 6-11.</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+				
+				<!-- Three -->
+				    <section id="three" class="wrapper style1 fade-up">
+					    <div class="inner">
+						    <h2 style="color: black; text-align: center;">Get in touch!</h2>
+							<hr class="styled-hr">
+				            <section>
+									<ul class="icons icons-center">
+										<li><a href="https://www.linkedin.com/in/pival-dhingra-a599181b1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a href="mailto:p2dhingr@uwaterloo.ca" class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+										<li><a href="https://github.com/pivaldhingra" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									</ul>
+							</section>
+					    </div>
+				    </section>
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', (event) => {
+					const canvas = document.getElementById('snakeCanvas');
+					const ctx = canvas.getContext('2d');
+		
+					function resizeCanvas() {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight;
+					}
+					window.addEventListener('resize', resizeCanvas);
+					resizeCanvas();
+		
+					const scale = 20;
+					let rows = Math.floor(canvas.height / scale);
+					let columns = Math.floor(canvas.width / scale);
+		
+					let snake;
+					let fruit;
+		
+					(function setup() {
+						snake = new Snake();
+						fruit = new Fruit();
+						fruit.pickLocation();
+		
+						window.setInterval(() => {
+							ctx.clearRect(0, 0, canvas.width, canvas.height);
+							snake.update();
+							snake.draw();
+							fruit.draw();
+		
+							if (snake.eat(fruit)) {
+								fruit.pickLocation();
+							}
+		
+							snake.changeDirectionTowardsFruit(fruit);
+						}, 50);
+					}());
+		
+					function Snake() {
+						this.x = 0;
+						this.y = 0;
+						this.xSpeed = scale;
+						this.ySpeed = 0;
+						this.total = 0;
+						this.tail = [];
+		
+						this.draw = function() {
+							ctx.fillStyle = "blue"; // snake colour
+		
+							for (let i = 0; i < this.tail.length; i++) {
+								ctx.fillRect(this.tail[i].x, this.tail[i].y, scale, scale);
+							}
+		
+							ctx.fillRect(this.x, this.y, scale, scale);
+						};
+		
+						this.update = function() {
+							for (let i = 0; i < this.tail.length - 1; i++) {
+								this.tail[i] = this.tail[i + 1];
+							}
+		
+							if (this.total >= 1) {
+								this.tail[this.total - 1] = { x: this.x, y: this.y };
+							}
+		
+							this.x += this.xSpeed;
+							this.y += this.ySpeed;
+		
+							if (this.x >= canvas.width) {
+								this.x = 0;
+							}
+		
+							if (this.y >= canvas.height) {
+								this.y = 0;
+							}
+		
+							if (this.x < 0) {
+								this.x = canvas.width - scale;
+							}
+		
+							if (this.y < 0) {
+								this.y = canvas.height - scale;
+							}
+						};
+		
+						this.changeDirectionTowardsFruit = function(fruit) {
+							const dx = fruit.x - this.x;
+							const dy = fruit.y - this.y;
+		
+							if (Math.abs(dx) > Math.abs(dy)) {
+								if (dx > 0) {
+									this.xSpeed = scale;
+									this.ySpeed = 0;
+								} else {
+									this.xSpeed = -scale;
+									this.ySpeed = 0;
+								}
+							} else {
+								if (dy > 0) {
+									this.xSpeed = 0;
+									this.ySpeed = scale;
+								} else {
+									this.xSpeed = 0;
+									this.ySpeed = -scale;
+								}
+							}
+						};
+		
+						this.eat = function(fruit) {
+							if (this.x === fruit.x && this.y === fruit.y) {
+								this.total++;
+								return true;
+							}
+		
+							return false;
+						}
+					}
+		
+					function Fruit() {
+						this.x;
+						this.y;
+		
+						this.pickLocation = function() {
+							this.x = Math.floor(Math.random() * columns) * scale;
+							this.y = Math.floor(Math.random() * rows) * scale;
+						}
+		
+						this.draw = function() {
+							ctx.fillStyle = "purple"; //food colour
+							ctx.fillRect(this.x, this.y, scale, scale);
+						}
+					}
+					// Animation for "Hello" in multiple languages
+					const helloText = document.getElementById('helloText');
+                    const languages = ["Hola!", "Bonjour!", "Hallo!", "नमस्ते!", "Hej!", "Ciao!", "こんにちは!", "안녕하세요!", "你好!", "Olá!", "Привет!"];
+                    let languageIndex = 0;
+
+                    setInterval(() => {
+						helloText.textContent = languages[languageIndex];
+                        languageIndex = (languageIndex + 1) % languages.length;
+                    }, 2000); // Change every 3 seconds
+        
+				});
+			</script>
+
+	</body>
+</html>
